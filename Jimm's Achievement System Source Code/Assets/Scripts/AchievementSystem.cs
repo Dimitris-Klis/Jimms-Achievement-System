@@ -18,6 +18,7 @@ public class AchievementSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ToastManager.instance.skipToasts = true;
         achievements = Resources.LoadAll<Achievement>("Achievements");
         for (int i = 0; i < achievements.Length; i++)
         {
@@ -28,6 +29,7 @@ public class AchievementSystem : MonoBehaviour
             obj.SetCompletion(PlayerPrefs.GetInt($"CompletedAchievementNum{i}", 0) == 1);
             achievementObjects.Add(obj);
         }
+        ToastManager.instance.skipToasts = false;
     }
     //If you're planning on changing the achievement order,
     //use CompleteAchievement(string achievementName) instead.
@@ -41,7 +43,7 @@ public class AchievementSystem : MonoBehaviour
     {
         achievementObjects.Find(o => o.assignedAchievement.Name == achievementName).SetCompletion(true);
     }
-    
+
     
     [ContextMenu("Reset Achievements")]
     public void ResetAllAchievements()

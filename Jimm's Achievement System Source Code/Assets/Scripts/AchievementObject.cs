@@ -38,11 +38,15 @@ public class AchievementObject : MonoBehaviour
     }
     public void SetCompletion(bool completed)
     {
-        Completed = completed;
-
         //If we completed the achievement, hide the overlay.
         Overlay.gameObject.SetActive(!completed);
 
+        //If the achievement wasn't completed previously, show the toast. Added to prevent showing the toast more than once.
+        if (completed && Completed != completed)
+        {
+            ToastManager.instance.Toast(assignedAchievement);
+        }
+        Completed = completed;
         PlayerPrefs.SetInt($"CompletedAchievementNum{AchievementSystem.instance.GetAchievementIndex(this)}", completed? 1 : 0);
     }
 }

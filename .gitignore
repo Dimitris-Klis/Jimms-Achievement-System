@@ -4,8 +4,10 @@ Jimm's Achievement System Source Code/Logs/
 Jimm's Achievement System Source Code/Temp/
 Jimm's Achievement System Source Code/UserSettings/
 
+#Visual Studio folders
+Jimm's Achievement System Source Code/.vs/
+
 #Visual Studio files
 Jimm's Achievement System Source Code/.vsconfig
-Jimm's Achievement System Source Code/Jimm's Achievement System Source Code.sln
-Jimm's Achievement System Source Code/Jimm's Achievement System.sln
-Jimm's Achievement System Source Code/.vs/
+Jimm's Achievement System Source Code/*.sln
+Jimm's Achievement System Source Code/*.csproj
