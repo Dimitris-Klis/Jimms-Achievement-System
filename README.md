@@ -3,14 +3,10 @@
 Hey! This is a simple achievement system I've decided to make for fun.
 Right now, there's basic achievement completion functionality (saving included).
 
-Something I might add soon is an _achievement toast_ (the little thing that appears in the corner telling you you completed the achievement). 
+I also added an _achievement toast_ (the little thing that appears in the corner telling you you completed the achievement)!
 
-Here's how the project looks currently:
-![AchievementExample](https://github.com/user-attachments/assets/38234494-841f-4611-867f-7c88bc4d70c0)
+Here's how the project looks:
+![AchievementExample2](https://github.com/user-attachments/assets/ca7a8cb3-9d03-4e5a-9678-97b63898ca18)
 
-Stay Tuned!
-
--Jimm
-
-> NOTE: If you want the achievements to work properly, make sure the achievement system exists on all scenes. 
+> NOTE: If you want the achievements to work properly, make sure that both AchievementSystem & ToastCanvas exist on all scenes. 
 The 'Achievements View' can be disabled if you don't want it to be visible.
