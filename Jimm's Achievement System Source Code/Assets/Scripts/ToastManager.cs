@@ -6,7 +6,18 @@ using UnityEngine.UI;
 
 public class ToastManager : MonoBehaviour
 {
-    public static ToastManager instance; void Awake() { instance = this; }
+    private void Start()
+    {
+        
+    }
+    public static ToastManager instance;
+    void Awake() 
+    {
+        if (instance != null)
+            Destroy(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
+        instance = this;
+    }
 
 
     public TMP_Text ToastText;
@@ -35,9 +46,9 @@ public class ToastManager : MonoBehaviour
         ToastText.text = $"Achievement Unlocked!\n\n{achievement.Name}";
         ToastImage.sprite = achievement.AchievementIcon;
         ToastAnimator.SetTrigger("ToastEnter");
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSecondsRealtime(4);
         ToastAnimator.SetTrigger("ToastExit");
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSecondsRealtime(.5f);
         //PlayAchievementSound
         CurrentToast = null;
     }
