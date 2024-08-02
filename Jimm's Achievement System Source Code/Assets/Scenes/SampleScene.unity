@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 1450414467}
   - component: {fileID: 1450414466}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: Achievements View
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,3 +11,6 @@ Here's how the project looks currently:
 Stay Tuned!
 
 -Jimm
+
+> NOTE: If you want the achievements to work properly, make sure the achievement system exists on all scenes. 
+The 'Achievements View' can be disabled if you don't want it to be visible.
