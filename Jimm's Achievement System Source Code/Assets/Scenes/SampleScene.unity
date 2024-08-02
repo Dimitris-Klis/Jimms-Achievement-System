@@ -704,12 +704,12 @@ GameObject:
   - component: {fileID: 1669274852}
   - component: {fileID: 1669274851}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Example Achievement Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1669274850
 RectTransform:
   m_ObjectHideFlags: 0

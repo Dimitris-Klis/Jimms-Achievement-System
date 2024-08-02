@@ -30,7 +30,7 @@ public class AchievementObject : MonoBehaviour
             Text.text = string.Concat
             (
                 $"<font=\"Roboto-Bold SDF\">{achievement.Name}</font>", //Title
-                $"<line-height=40%>\r\n<size=50%><font=\"Roboto-Regular SDF\"><line-height=100%>{achievement.Description}</font></size>" //Description
+                $"<line-height=60%>\r\n<size=50%><font=\"Roboto-Regular SDF\"><line-height=100%>{achievement.Description}</font></size>" //Description
             );
 
             IconImage.sprite = achievement.AchievementIcon;
